@@ -1,0 +1,6 @@
+type Todo {
+  id: ID! @unique
+  createdAt: DateTime!
+  description: String!
+  completed: Boolean!
+}
