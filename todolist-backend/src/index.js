@@ -33,5 +33,5 @@ server.start({
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
   "preflightContinue": false,
 },
-"port": process.env.port || 4000
+"port": process.env.PORT || 4000
 },() => console.log("server"))
