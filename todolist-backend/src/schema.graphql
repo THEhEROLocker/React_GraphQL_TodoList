@@ -1,0 +1,6 @@
+# import todo from "./generated/prisma.graphql"
+
+type Query {
+    info: String!
+    todoes: [todo!]!
+}
