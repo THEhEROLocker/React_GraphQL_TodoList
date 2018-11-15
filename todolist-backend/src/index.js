@@ -7,6 +7,16 @@ const resolvers = {
         todoes: (root, args, context, info) => {
             return context.db.query.todoes({}, info)
         } 
+ },
+ Mutation: {
+     addTodo: (root, args, context, info) => {
+         return context.db.mutation.createtodo({
+             data: {
+                description: args.description,
+                isCompleted: args.isCompleted
+             },
+        }, info)
+     }
  }
 }
 

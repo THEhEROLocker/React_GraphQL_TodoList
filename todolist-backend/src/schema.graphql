@@ -4,3 +4,7 @@ type Query {
     info: String!
     todoes: [todo!]!
 }
+
+type Mutation {
+    addTodo(description: String!, isCompleted: Boolean!): todo!
+}
